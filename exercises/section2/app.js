@@ -111,3 +111,32 @@ function i() {
 
 var myVar3 = 'defined in global scope';
 i();
+
+// ASYNCHRONOUS CODE
+/**********************************
+
+Events are handled by being placed in an event queue
+these events are.
+
+Functions responding to a particular event are processed in the execution stack
+and the next event will not be handled until the execution stack is clear.
+
+*/
+
+// long running function
+ function waitThreeSeconds() {
+   var ms = 3000 + new Date().getTime();
+   while (new Date() < ms){}
+   console.log('finished waitThreeSeconds');
+ }
+
+ function clickHandler() {
+   console.log('click event!');
+ }
+
+ // listen for the click event
+ document.addEventListener('click', clickHandler);
+
+ waitThreeSeconds();
+ console.log('finished execution!');
+ 

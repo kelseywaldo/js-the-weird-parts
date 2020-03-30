@@ -3,6 +3,9 @@
 
 ## Vocabulary
 
+**Asynchronous**
+- More than 1 at a time
+
 **Compiler**
 - A compiler is a software program that transforms high-level source code that is written by a developer in a high-level programming language into a low level object code (binary code) in machine language, which can be understood by the processor
 
@@ -36,7 +39,7 @@
 - A collection of name/value pairs
 
 **Scope chain**
-- Scope - where can I reference a variable
+- Scope - where a variable is available in your code (and also, if it's the same variable or a new copy)
 - Chain - reference to outer environment (lexically)
 
 **Single threaded**
